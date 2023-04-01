@@ -4,48 +4,36 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>forms</title>
+    <title> Forma </title>
 </head>
 <body>
     <div>
-    <form action="#" method="get">
-        <fieldset>
-            <legend> General information</legend>
-<input type="text" placeholder=" User name" name="user name" value="">
-<br><input type="password" placeholder=" User Pasword" name="user pssvord" value=" ">
-<br><input type="tel" placeholder="Telephone" name="User telephone" value=" "> 
-</fieldset>
-<div>
-    <fieldset>
-        <legend> User Skills </legend> 
-    <br><input type="checkbox" name="Skills []" value="HTML"> HTML
-    <br> <input type="checkbox" name="Skills []" value="CSS"> CSS
-    <br> <input type="checkbox" name="Skills []" value="JS"> JS
-</div>
-<div>
- <p><input type="radio" name="Language" value="English"> English</p>
- <p><input type="radio" name="Language" value="Russian"> Russian  </p>
- <p><input type="radio" name="Language" value="Ukrainian"> Ukrainian</p>
-</div>
-<br> <select name="User Skills" id=" User Skills">
-<option value="VS Code "> VS Code</option>
-<option value="React "> React</option>
-<option value="Git"> Git</option>
-<option value="Git HUB"> Git HUB</option>
+        <form action="#" method="get">
+            <Fieldset>
+                <legend> General information</legend>
+<input type="text" placeholder=" Призвище Ім’я" name=" User name" value="" >
+<br> <input type="text" placeholder=" E-mail" name="E-mail" value="">
+<br><input type="password" placeholder="Пароль" name="Pasword" value=" ">
+<br><input type="password" placeholder="Пароль ще раз" name="Pasword" value=" ">
+</Fieldset>
+<fieldset>
+    <legend> Information</legend>
+<input type="radio" name="Стать" value=" Чоловіча"> Чоловіча
+<input type="radio" name="Стать" value="Жіноча"> Жіноча
+<br><input type="number" name="Вік" placeholder=" Вік" value=" ">
+<p><select name=" Курси " id=" Курси" aria-placeholder=" Курс">
+    <option value=" Front-end"> Front-end</option>
+    <option value=" Back-end"> Back-end</option>
+    <option value=" Project-manager"> Prodject-manager</option>
+    <option value=" QA-manual"> QA-manual</option>
 </select>
-<br> <select name="User Skills []" id=" User Skills" multiple>
-    <option value="VS Code "> VS Code</option>
-    <option value="React "> React</option>
-    <option value="Git"> Git</option>
-    <option value="Git HUB"> Git HUB</option>
-    </select>
+</p>
+<br> <textarea name="Повна  адреса" id=" Повна адреса" cols="30" rows="10"> Повна адреса</textarea>
+<br><input type="checkbox" name="Agreement[]"  value="" > Я погоджуюсь з обробкою персональних даних 
 </fieldset>
-<fieldset> 
-    <legend> Coments</legend>
-    <br><textarea name="Coment" id="Coment" cols="30" rows="10"></textarea>
-    <br> <button type="submit"> submit</button> 
-</fieldset>
- </form>
- </div>
-</body>  
+<br><button type="reset"> Очистити форму </button>
+<button type="submit"> Зареєструватися</button>
+        </form>
+    </div>
+</body>
 </html>
