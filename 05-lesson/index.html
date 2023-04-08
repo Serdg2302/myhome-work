@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Forma</title>
   </head>
   <body>
@@ -13,46 +13,51 @@
           <legend>General information</legend>
           <input
             type="text"
-            placeholder=" Призвище Ім’я"
+            placeholder="Призвище Ім’я"
             name="User name"
             value=""
-          />
-          <br />
-          <input type="text" placeholder=" E-mail" name="E-mail" value="" />
-          <br /><input
+          >
+          <br>
+          <input type="text" placeholder="E-mail" name="E-mail" value="" >
+          <br><input
             type="password"
             placeholder="Пароль"
             name="Pasword"
-            value=" "
-          />
-          <br /><input
+            value=""
+          >
+          <br><input
             type="password"
             placeholder="Пароль ще раз"
-            name="Pasword again"
-            value=" "
-          />
+            name="pasword again"
+            value=""
+          >
         </fieldset>
         <fieldset>
           <legend>Information</legend>
-          <input type="radio" name="gender" value=" Чоловіча" /> Чоловіча
-          <input type="radio" name="gender-01" value="Жіноча" /> Жіноча
-          <br /><input type="number" min="10" max="100" step="01" name="age" placeholder=" Вік" value=" " />
+          <label>
+          <input type="radio" name="gender" value="Чоловіча"> Чоловіча
+          </label>
+          <label>
+          <input type="radio" name="gender" value="Жіноча"> Жіноча
+          </label>
+          <br><input type="number" min="10" max="100" step="01" name="age" placeholder=" Вік" value="" >
           <p>
-            <select name="course" id=" Курси" aria-placeholder=" Курс">
-              <option value=" Front-end">Front-end</option>
-              <option value=" Back-end">Back-end</option>
-              <option value=" Project-manager">Prodject-manager</option>
-              <option value=" QA-manual">QA-manual</option>
+            <select name="course" id="Курси"> 
+              <option value="Front-end">Front-end</option>
+              <option value="Back-end">Back-end</option>
+              <option value="Project-manager">Prodject-manager</option>
+              <option value="QA-manual">QA-manual</option>
             </select>
           </p>
-          <br />
-          <textarea name="full adress" id=" Повна адреса" cols="30" rows="10">
- Повна адреса</textarea
-          >
-          <br /><input type="checkbox" name="Agreement[]" value="" /> Я
+          <br>
+          <textarea name="full-adress" id="Повна-адреса" cols="30" rows="10">
+          Повна адреса</textarea>
+          <label>
+          <br><input type="checkbox" name="Agreement" value=""> Я
           погоджуюсь з обробкою персональних даних
+        </label>
         </fieldset>
-        <br /><button type="reset">Очистити форму</button>
+        <br><button type="reset">Очистити форму</button>
         <button type="submit">Зареєструватися</button>
       </form>
     </div>
